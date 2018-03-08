@@ -1,0 +1,19 @@
+Institute,Tissue Type,In-vitro Cell lines,xenograft models ,PDX models,GEMMs,Syngenic tumour models
+Manchester ,Bladder,Yes,Yes,,,
+Manchester ,Brain,Yes,Yes,,,Yes
+Manchester ,Brain,,,,,
+Manchester ,Breast,Yes,Yes,,,Yes
+Manchester ,Cervical,Yes,Yes,,,
+Manchester ,Colorectal,Yes,Yes,,,Yes
+Manchester ,GBM,Yes,Yes,Yes,,Yes
+Manchester ,GI tract,,,,,
+Manchester ,Head & Neck,Yes,Yes,,,
+Manchester ,Liver,Yes,Yes,,,
+Manchester ,Lung,Yes,Yes,,,Yes
+Manchester ,Melanoma,Yes,Yes,,,Yes
+Manchester ,Pancreatic,Yes,Yes,,,
+Manchester ,Prostate,Yes,Yes,,,
+Manchester ,Salivary Glands,,,,,
+Manchester ,Sarcoma,Yes,Yes,,,Yes
+Manchester ,Skin,,,,,
+Manchester ,Squamous Cell Carcinoma,,,,,Yes

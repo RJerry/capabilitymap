@@ -1,0 +1,228 @@
+h1 {text-align:center;}
+
+body {
+	background: #fff;
+	color: #000;
+	font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+   
+    
+    text-align: left;
+    
+     display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+thead {
+    border: 1px solid grey;
+        /* head takes the height it requires, 
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+tbody {
+   
+  
+    max-height: 150px;
+    width: 100%;
+        /* body takes all the remaining available space */
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: scroll;
+}
+
+th {
+	width:70px;
+}
+
+td{
+	width: 60px;
+}
+
+#holder {
+	height: 480px;
+	left: 50%;
+	margin: -240px 0 0 -320px;
+	position: absolute;
+	top: 50%;
+	width: 640px;
+}
+
+#copy {
+	bottom: 0;
+	font: 300 .7em "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+	position: absolute;
+	right: 1em;
+	text-align: right;
+}
+
+#copy a {
+	color: #000;
+}
+
+#pagetitle {
+	height 100px;
+	left: 50%
+	
+	
+}
+
+#canvas {
+	height: 900px;
+	left: 30%;
+	position: absolute;
+	top: 0;
+	width: 600px;
+}
+#paper {
+	//background: #033;
+	background-image: url("../img/Mapbg.svg");
+	height: 500px;
+	left: 0%;
+	position: absolute;
+	top: 0px;
+	width: 600px;
+}
+
+#info {
+	height: 400px;
+	right: 0%;
+	position: absolute;
+	top: 500px;
+	width: 600px;
+}
+}
+
+#lungs, #kidneys, #stomache, #colon, #bladder, #liver, #pancreas, #London, #Cambridge {
+	display: none;
+	height: 500px;
+	overflow: auto;
+	position: absolute;
+	left: 0;
+	top: 600px;
+	width: 900px;
+}
+h2 {
+	text-align: center;
+}
+
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  max-width: 900px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:12px;
+  font-weight: 100;
+  padding:10px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:10px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:14px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
