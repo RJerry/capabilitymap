@@ -83,7 +83,7 @@ td{
 }
 #paper {
 	//background: #033;
-	background-image: url("../img/Mapbg.svg");
+	background-image: url("BodyWithMap.svg");
 	height: 500px;
 	left: 0%;
 	position: absolute;
