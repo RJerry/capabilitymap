@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+		<meta http-equiv="expires" content="0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>try</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg.js"></script>
+        <script type="text/javascript" charset="utf-8">
+				window.onload = init;
+				
+		        function init() {
+				  	var svgElement=document.getElementById("svgout");
+					var paper = Snap(svgElement);
+					var map = Snap.load("img/BodyWithMap2.svg", loadedsvg);
+					
+					
+					function loadedsvg(data) {
+						allpath = data.selectAll("*")
+						console.log(allpath[10].hasOwnProperty('type'));
+						var myvalue = allpath[10]['type']
+						
+						var pathlist = []
+						console.log(typeof(pathlist))	
+						
+						for (mykey in Object.keys(allpath)){
+							//console.log(mykey)
+							//console.log(allpath[mykey]['type'])
+							if (allpath[mykey]&& allpath[mykey].hasOwnProperty('type') && allpath[mykey]['type']=='path' ) {
+								console.log(typeof(allpath[mykey]['node']['id']));
+								pathname = allpath[mykey]['node']['id']
+								console.log(typeof(pathname))
+								pathlist.push(pathname)
+							} 
+							else {}
+						}
+
+						console.log(Object.keys(pathlist))
+						
+						for (var key in pathlist) {
+							
+							mypath = data.select("#"+pathlist[key])
+							mypath.attr({ stroke: "cornflowerblue",
+										strokeWidth: 3,
+									  fill: "khaki"});
+							mypath.hover(function() { mypath.animate({ strokeWidth: 5 }, 1000) })
+							//mypath.animate({transform: 's2r45,150,150'},1000,mina.bounce)
+							paper.append(mypath)
+						}
+							
+						  
+					}
+					
+					var hoverover = function() { mypath.animate({ transform: 's2r45,150,150' }, 1000, mina.bounce ) };
+					var hoverout = function() { mypath.animate({ transform: 's1r0,150,150' }, 1000, mina.bounce ) };
+					
+					var circ1 = paper.circle(900, 100, 50);
+					var circ2 = paper.circle(900, 150, 100);
+					group1 = paper.group(circ2, circ1);
+					group1.attr( {
+					   fill: "#ff0000",
+					   stroke: "#0000ff",
+					   strokeWidth: 30
+					})
+				  console.log("Snap() returned " + paper);
+				}
+				
+				
+				
+		
+
+		
+		</script>
+		
+<body>
+<svg id="svgout" width="600" height="500"></svg>
+</div>
+</body>
