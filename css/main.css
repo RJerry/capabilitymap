@@ -35,7 +35,7 @@ body {
 	width: 900px;
 }
 #paper {
-	background-image: url("../img/Mapbg.svg");
+	background-image: url("BodyWIthMap.svg");
 	height: 500px;
 	left: 10%;
 	position: absolute;
