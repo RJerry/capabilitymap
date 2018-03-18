@@ -1,4 +1,5 @@
 h1 {text-align:center;}
+h2 {text-align: center;}
 
 body {
 	background: #fff;
@@ -6,56 +7,8 @@ body {
 	font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-   
-    
-    text-align: left;
-    
-     display: flex;
-    flex-flow: column;
-    height: 100%;
-    width: 100%;
-}
 
-thead {
-    border: 1px solid grey;
-        /* head takes the height it requires, 
-    and it's not scaled when table is resized */
-    flex: 0 0 auto;
-    width: 100%;
-}
-
-tbody {
-   
-  
-    max-height: 150px;
-    width: 100%;
-        /* body takes all the remaining available space */
-    flex: 1 1 auto;
-    display: block;
-    overflow-y: scroll;
-}
-
-th {
-	width:70px;
-}
-
-td{
-	width: 60px;
-}
-
-#holder {
-	height: 480px;
-	left: 50%;
-	margin: -240px 0 0 -320px;
-	position: absolute;
-	top: 50%;
-	width: 640px;
-}
-
-#copy {
+.copy {
 	bottom: 0;
 	font: 300 .7em "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
 	position: absolute;
@@ -63,7 +16,7 @@ td{
 	text-align: right;
 }
 
-#copy a {
+.copy a {
 	color: #000;
 }
 
@@ -75,17 +28,16 @@ td{
 }
 
 #canvas {
-	height: 900px;
-	left: 30%;
+	height: 750px;
+	left: 25%;
 	position: absolute;
-	top: 0;
-	width: 600px;
+	top: 100px;
+	width: 900px;
 }
 #paper {
-	//background: #033;
-	background-image: url("BodyWithMap.svg");
+	background-image: url("../img/Mapbg.svg");
 	height: 500px;
-	left: 0%;
+	left: 10%;
 	position: absolute;
 	top: 0px;
 	width: 600px;
@@ -96,45 +48,57 @@ td{
 	right: 0%;
 	position: absolute;
 	top: 500px;
-	width: 600px;
-}
-}
-
-#lungs, #kidneys, #stomache, #colon, #bladder, #liver, #pancreas, #London, #Cambridge {
-	display: none;
-	height: 500px;
-	overflow: auto;
-	position: absolute;
-	left: 0;
-	top: 600px;
 	width: 900px;
 }
-h2 {
-	text-align: center;
+
+#head {
+	background-color:#88d8c0;
+	height: 100px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	
 }
 
-
-.table-fill {
-  background: white;
-  border-radius:3px;
-  border-collapse: collapse;
-  height: 320px;
-  max-width: 900px;
-  padding:5px;
-  width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
+#foot {
+	background-color:#88d8c0;
+	height: 50px;
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	
 }
- 
+
+tr td{
+    border:1px solid black;
+
+}
+tbody {
+    display:block;
+    max-height:200px;
+    overflow-y:scroll;
+	overflow-x:hidden;
+}
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+thead {
+    width:903px; 
+}
+table {
+    width:924px;
+}
+
 th {
-  color:#D5DDE5;;
-  background:#1b1e24;
-  border-bottom:4px solid #9ea7af;
-  border-right: 1px solid #343a45;
-  font-size:12px;
+  font-size:15px;
+  color:#777;
+  background-color: #88d8c0;
   font-weight: 100;
   padding:10px;
-  text-align:left;
+  text-align:center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align:middle;
 }
