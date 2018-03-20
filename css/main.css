@@ -1,12 +1,41 @@
-h1 {text-align:center;}
+h1 {text-align:center;
+	margin: 0px;
+
+}
 h2 {text-align: center;}
 
 body {
 	background: #fff;
 	color: #000;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
 	font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
 }
 
+.header {
+  height: 80px;
+  background: #88d8c0;
+}
+
+.content {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  overflow: auto;
+}
+
+.center {
+	background: #78c1ab;
+    margin: auto;
+    width: 70%;
+    border: 0px solid #73AD21;
+    padding: 20px;
+}
 
 .copy {
 	bottom: 0;
@@ -28,33 +57,31 @@ body {
 }
 
 #canvas {
-	height: 750px;
-	left: 25%;
-	position: absolute;
-	top: 100px;
-	width: 900px;
+	margin: auto;
+	top: 0px;
+	width: 70%;
 }
 #paper {
 	background-image: url("BodyWithMap.svg");
 	height: 500px;
-	left: 10%;
+	left: 15%;
 	position: absolute;
 	top: 0px;
 	width: 600px;
 }
 
 #info {
-	height: 400px;
-	right: 0%;
+	height: 300px;
+	right: 15%;
 	position: absolute;
-	top: 500px;
+	top: 0px;
 	width: 900px;
 }
 
 #head {
 	background-color:#88d8c0;
 	height: 100px;
-	top: 0px;
+	top: 50px;
 	position: absolute;
 	width: 100%;
 	
@@ -75,7 +102,7 @@ tr td{
 }
 tbody {
     display:block;
-    max-height:200px;
+    max-height:650px;
     overflow-y:scroll;
 	overflow-x:hidden;
 }

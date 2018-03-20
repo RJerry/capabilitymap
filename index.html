@@ -80,8 +80,13 @@
                 capabilitymap[state].color = capabilitymap[state].attr('fill');
                 (function (st, state) {
                     st[0].style.cursor = "pointer";
-                    
 					st[0].onmouseover = function () {
+					    
+                        //current && capabilitymap[current].animate({fill: '#333' stroke: "#666",}, 600) && (document.getElementById(current).style.display = "");
+                        st.animate({fill: '#F0E68C', stroke: "#ccc"}, 600);
+                    }
+					
+					st[0].onclick = function () {
 					    
                         //current && capabilitymap[current].animate({fill: '#333' stroke: "#666",}, 600) && (document.getElementById(current).style.display = "");
                         st.animate({fill: '#F0E68C', stroke: "#ccc"}, 600);
@@ -135,7 +140,7 @@
                     };
                     
 					if (state == "London") {
-                        st[0].onmouseover()
+                        st[0].onclick()
                        
                     }
                 })(capabilitymap[state], state);
@@ -144,9 +149,16 @@
         </script>
     </head>
     <body>
-        <div id="canvas">
-            <div id="paper"></div>
-			<div id="info"></div>
-        </div>
+		<div class="header">
+			<div class="center">
+			<h1>UK Cancer Preclinical Model Capability Map</h1>
+			</div>
+		</div>
+        <div class="content" >
+			<div id="canvas">
+				<div id="paper"></div>
+				<div id="info"></div>
+			</div>
+		</div>
     </body>
 </html>
